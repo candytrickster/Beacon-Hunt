@@ -1,35 +1,7 @@
 {
-  "_from": "cordova-plugin-contacts@~2.0.1",
-  "_id": "cordova-plugin-contacts@2.0.1",
-  "_inBundle": false,
-  "_integrity": "sha1-czw2mTj0deoFdmxhVVj3QSVphIk=",
-  "_location": "/cordova-plugin-contacts",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "cordova-plugin-contacts@~2.0.1",
-    "name": "cordova-plugin-contacts",
-    "escapedName": "cordova-plugin-contacts",
-    "rawSpec": "~2.0.1",
-    "saveSpec": null,
-    "fetchSpec": "~2.0.1"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-contacts/-/cordova-plugin-contacts-2.0.1.tgz",
-  "_shasum": "733c369938f475ea05766c615558f74125698489",
-  "_spec": "cordova-plugin-contacts@~2.0.1",
-  "_where": "/Users/traciewamsley/Documents/experiments/phonegap/huntBeacon/node_modules",
-  "author": {
-    "name": "Apache Software Foundation"
-  },
-  "bugs": {
-    "url": "https://github.com/apache/cordova-plugin-contacts/issues"
-  },
-  "bundleDependencies": false,
+  "name": "cordova-plugin-contacts",
+  "version": "2.0.1",
+  "description": "Cordova Contacts Plugin",
   "cordova": {
     "id": "cordova-plugin-contacts",
     "platforms": [
@@ -44,9 +16,10 @@
       "windows"
     ]
   },
-  "deprecated": false,
-  "description": "Cordova Contacts Plugin",
-  "homepage": "https://github.com/apache/cordova-plugin-contacts#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apache/cordova-plugin-contacts"
+  },
   "keywords": [
     "cordova",
     "contacts",
@@ -62,11 +35,6 @@
     "cordova-windows8",
     "cordova-windows"
   ],
-  "license": "Apache 2.0",
-  "name": "cordova-plugin-contacts",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/apache/cordova-plugin-contacts.git"
-  },
-  "version": "2.0.1"
+  "author": "Apache Software Foundation",
+  "license": "Apache 2.0"
 }

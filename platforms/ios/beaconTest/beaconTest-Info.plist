@@ -52,11 +52,11 @@
       <key>NSAllowsArbitraryLoads</key>
       <true/>
     </dict>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string/>
     <key>UIBackgroundModes</key>
     <array>
       <string>bluetooth-central</string>
     </array>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string/>
   </dict>
 </plist>

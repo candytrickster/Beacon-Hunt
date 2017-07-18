@@ -18,11 +18,15 @@
     <feature name="Battery">
         <param name="ios-package" value="CDVBattery" />
     </feature>
-    <feature name="BLE">
-        <param name="ios-package" value="EVOBLE" />
-    </feature>
     <feature name="Camera">
         <param name="ios-package" value="CDVCamera" />
+    </feature>
+    <feature name="File">
+        <param name="ios-package" value="CDVFile" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Capture">
+        <param name="ios-package" value="CDVCapture" />
     </feature>
     <feature name="Console">
         <param name="ios-package" value="CDVLogger" />
@@ -42,10 +46,6 @@
     <feature name="Notification">
         <param name="ios-package" value="CDVNotification" />
     </feature>
-    <feature name="File">
-        <param name="ios-package" value="CDVFile" />
-        <param name="onload" value="true" />
-    </feature>
     <feature name="FileTransfer">
         <param name="ios-package" value="CDVFileTransfer" />
     </feature>
@@ -61,9 +61,6 @@
     <feature name="Media">
         <param name="ios-package" value="CDVSound" />
     </feature>
-    <feature name="Capture">
-        <param name="ios-package" value="CDVCapture" />
-    </feature>
     <feature name="NetworkStatus">
         <param name="ios-package" value="CDVConnection" />
     </feature>
@@ -78,12 +75,15 @@
     <feature name="Vibration">
         <param name="ios-package" value="CDVVibration" />
     </feature>
-    <name>Treasure Hunt</name>
+    <feature name="BLE">
+        <param name="ios-package" value="EVOBLE" />
+    </feature>
+    <name>beaconTest</name>
     <description>
-        This is a test mobile app for a scavenger hunt with beacons
+        This is a test mobile app for Beacons
     </description>
-    <author email="tracie.wamsley@utahinteractive.org" href="http://www.utahinteractive.org">
-        Tracie
+    <author email="sherzog@utahinteractive.org" href="http://www.utahinteractive.org">
+        sherzog
     </author>
     <content src="index.html" />
     <access origin="*" />

@@ -7,9 +7,7 @@
   "_phantomChildren": {},
   "_requested": {
     "type": "git",
-    "raw": "cordova-plugin-file@https://github.com/apache/cordova-plugin-file",
-    "name": "cordova-plugin-file",
-    "escapedName": "cordova-plugin-file",
+    "raw": "https://github.com/apache/cordova-plugin-file",
     "rawSpec": "https://github.com/apache/cordova-plugin-file",
     "saveSpec": "git+https://github.com/apache/cordova-plugin-file.git",
     "fetchSpec": "https://github.com/apache/cordova-plugin-file.git",
@@ -20,8 +18,8 @@
     "/"
   ],
   "_resolved": "git+https://github.com/apache/cordova-plugin-file.git#f647d7cda13a35a5ecb4ace12034b4b1380fef22",
-  "_spec": "cordova-plugin-file@https://github.com/apache/cordova-plugin-file",
-  "_where": "/Users/traciewamsley/Documents/experiments/phonegap/huntBeacon/node_modules",
+  "_spec": "https://github.com/apache/cordova-plugin-file",
+  "_where": "/Users/traciewamsley/Documents/experiments/phonegap/beaconTest/node_modules",
   "author": {
     "name": "Apache Software Foundation"
   },

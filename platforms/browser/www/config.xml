@@ -6,12 +6,12 @@
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
-    <name>Treasure Hunt</name>
+    <name>beaconTest</name>
     <description>
-        This is a test mobile app for a scavenger hunt with beacons
+        This is a test mobile app for Beacons
     </description>
-    <author email="tracie.wamsley@utahinteractive.org" href="http://www.utahinteractive.org">
-        Tracie
+    <author email="sherzog@utahinteractive.org" href="http://www.utahinteractive.org">
+        sherzog
     </author>
     <content src="index.html" />
     <access origin="*" />

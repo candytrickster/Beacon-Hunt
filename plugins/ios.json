@@ -13,6 +13,9 @@
         "cordova-plugin-camera": {
             "PACKAGE_NAME": "org.utahinteractive.beaconTest"
         },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "org.utahinteractive.beaconTest"
+        },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "org.utahinteractive.beaconTest"
         },
@@ -31,12 +34,6 @@
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "org.utahinteractive.beaconTest"
         },
-        "cordova-plugin-eddystone": {
-            "PACKAGE_NAME": "org.utahinteractive.beaconTest"
-        },
-        "cordova-plugin-file": {
-            "PACKAGE_NAME": "org.utahinteractive.beaconTest"
-        },
         "cordova-plugin-file-transfer": {
             "PACKAGE_NAME": "org.utahinteractive.beaconTest"
         },
@@ -50,9 +47,6 @@
             "PACKAGE_NAME": "org.utahinteractive.beaconTest"
         },
         "cordova-plugin-media": {
-            "PACKAGE_NAME": "org.utahinteractive.beaconTest"
-        },
-        "cordova-plugin-media-capture": {
             "PACKAGE_NAME": "org.utahinteractive.beaconTest"
         },
         "cordova-plugin-network-information": {
@@ -69,12 +63,18 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "org.utahinteractive.beaconTest"
-        }
-    },
-    "dependent_plugins": {
+        },
+        "cordova-plugin-eddystone": {
+            "PACKAGE_NAME": "org.utahinteractive.beaconTest"
+        },
         "cordova-plugin-ble": {
             "PACKAGE_NAME": "org.utahinteractive.beaconTest"
         },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "org.utahinteractive.beaconTest"
+        }
+    },
+    "dependent_plugins": {
         "cordova-plugin-compat": {
             "PACKAGE_NAME": "org.utahinteractive.beaconTest"
         }
