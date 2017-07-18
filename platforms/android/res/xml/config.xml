@@ -65,7 +65,7 @@
     <feature name="Vibration">
         <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
     </feature>
-    <name>beaconTest</name>
+    <name>Treasure Hunt</name>
     <description>
         This is a test mobile app for a scavenger hunt with beacons
     </description>

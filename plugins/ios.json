@@ -7,14 +7,8 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-eddystone": {
-            "PACKAGE_NAME": "com.mydomain.myeddystoneapp"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.mydomain.myeddystoneapp"
-        },
         "cordova-plugin-battery-status": {
-            "PACKAGE_NAME": "com.mydomain.myeddystoneapp"
+            "PACKAGE_NAME": "org.utahinteractive.beaconTest"
         },
         "cordova-plugin-camera": {
             "PACKAGE_NAME": "org.utahinteractive.beaconTest"
@@ -35,6 +29,9 @@
             "PACKAGE_NAME": "org.utahinteractive.beaconTest"
         },
         "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "org.utahinteractive.beaconTest"
+        },
+        "cordova-plugin-eddystone": {
             "PACKAGE_NAME": "org.utahinteractive.beaconTest"
         },
         "cordova-plugin-file": {
@@ -69,11 +66,14 @@
         },
         "cordova-plugin-vibration": {
             "PACKAGE_NAME": "org.utahinteractive.beaconTest"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "org.utahinteractive.beaconTest"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-ble": {
-            "PACKAGE_NAME": "com.mydomain.myeddystoneapp"
+            "PACKAGE_NAME": "org.utahinteractive.beaconTest"
         },
         "cordova-plugin-compat": {
             "PACKAGE_NAME": "org.utahinteractive.beaconTest"

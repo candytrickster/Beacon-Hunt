@@ -1,27 +1,19 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "id": "cordova-plugin-ble.BLE",
-        "file": "plugins/cordova-plugin-ble/ble.js",
-        "pluginId": "cordova-plugin-ble",
-        "clobbers": [
-            "evothings.ble"
-        ]
-    },
-    {
-        "id": "cordova-plugin-eddystone.eddystoneplugin",
-        "file": "plugins/cordova-plugin-eddystone/js/eddystone-plugin.js",
-        "pluginId": "cordova-plugin-eddystone",
-        "clobbers": [
-            "evothings.eddystone"
-        ]
-    },
-    {
         "id": "cordova-plugin-battery-status.battery",
         "file": "plugins/cordova-plugin-battery-status/www/battery.js",
         "pluginId": "cordova-plugin-battery-status",
         "clobbers": [
             "navigator.battery"
+        ]
+    },
+    {
+        "id": "cordova-plugin-ble.BLE",
+        "file": "plugins/cordova-plugin-ble/ble.js",
+        "pluginId": "cordova-plugin-ble",
+        "clobbers": [
+            "evothings.ble"
         ]
     },
     {
@@ -214,6 +206,14 @@ module.exports = [
         "pluginId": "cordova-plugin-dialogs",
         "merges": [
             "navigator.notification"
+        ]
+    },
+    {
+        "id": "cordova-plugin-eddystone.eddystoneplugin",
+        "file": "plugins/cordova-plugin-eddystone/js/eddystone-plugin.js",
+        "pluginId": "cordova-plugin-eddystone",
+        "clobbers": [
+            "evothings.eddystone"
         ]
     },
     {
@@ -580,18 +580,17 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-ble": "2.0.1",
-    "cordova-plugin-eddystone": "1.3.0",
-    "cordova-plugin-whitelist": "1.3.2",
     "cordova-plugin-battery-status": "1.1.2",
+    "cordova-plugin-ble": "2.0.1",
     "cordova-plugin-camera": "2.1.1",
+    "cordova-plugin-compat": "1.1.0",
     "cordova-plugin-console": "1.0.7",
     "cordova-plugin-contacts": "2.0.1",
     "cordova-plugin-device": "1.1.6",
     "cordova-plugin-device-motion": "1.2.5",
     "cordova-plugin-device-orientation": "1.0.7",
     "cordova-plugin-dialogs": "1.2.1",
-    "cordova-plugin-compat": "1.1.0",
+    "cordova-plugin-eddystone": "1.3.0",
     "cordova-plugin-file": "4.3.4-dev",
     "cordova-plugin-file-transfer": "1.5.1",
     "cordova-plugin-geolocation": "2.1.0",
@@ -602,7 +601,8 @@ module.exports.metadata =
     "cordova-plugin-network-information": "1.2.1",
     "cordova-plugin-splashscreen": "3.2.2",
     "cordova-plugin-statusbar": "2.1.3",
-    "cordova-plugin-vibration": "2.1.5"
+    "cordova-plugin-vibration": "2.1.5",
+    "cordova-plugin-whitelist": "1.3.2"
 };
 // BOTTOM OF METADATA
 });
