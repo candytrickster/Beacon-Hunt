@@ -78,12 +78,12 @@
     <feature name="BLE">
         <param name="ios-package" value="EVOBLE" />
     </feature>
-    <name>beaconTest</name>
+    <name>Treasure Hunt</name>
     <description>
-        This is a test mobile app for Beacons
+        This is a scavenger hunt with beacons for mobile
     </description>
-    <author email="sherzog@utahinteractive.org" href="http://www.utahinteractive.org">
-        sherzog
+    <author email="tracie.wamsley@utahinteractive.org" href="http://www.utahinteractive.org">
+        Tracie
     </author>
     <content src="index.html" />
     <access origin="*" />
