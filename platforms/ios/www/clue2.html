@@ -17,10 +17,9 @@
 
         <h1>Clue 2 of 2</h1>
         <h3>You won’t be hungry when this is filled, it keeps your things nice and chilled.</h3>
-        <h1>Beacon Test <span class="count"></span></h1>
-        <p id="message">Preparing...</p>
+        <p id="message">Searching for bacon...</p>
 
-        <div id="found-beacons">Waiting for bacon...</div>
+        <div id="found-beacons"></div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
@@ -30,7 +29,7 @@
     <script>
 
 
-ADDRESS:
+// ADDRESS:
 // 0C:F3:EE:0D:9F:D4 -3658
 // OC:F3:EE:0D:9F:CC - NO MODEL NUM
 // 0C:F3:EE:0D:A4:4C - 47447
@@ -41,13 +40,11 @@ ADDRESS:
         bacon.appContainer = document.querySelector('.app');
 
     bacon.ready = function() {
-        bacon.message('the bacon is ready!');
         setTimeout(bacon.scan, 1000);
         bacon.timer = setInterval(bacon.updateList, 1000);
     }
 
     bacon.scan = function() {
-        bacon.message('cooking bacons');
         evothings.eddystone.startScan(function(beacon) {
             // Update beacon data.
             beacon.timeStamp = Date.now();
@@ -90,7 +87,6 @@ ADDRESS:
     }
 
     bacon.display = function() {
-        bacon.message('providing bacons');
         bacon.appContainer.classList.add('loading');
         var baconHtml = '';
         var sortedList = bacon.getSortedList(bacon.beacons);
@@ -115,12 +111,12 @@ ADDRESS:
                 // baconHtml += '</div>';
                 bacon.message('You found it! The answer was the "Fridge"');
                 bacon.timer = null;
-                baconHtml += '<a class="btn" id="play" href="goal.html">COMPLETE</a>';
+                baconHtml += '<br/><a class="btn" id="play" href="goal.html">COMPLETE</a>';
             }
             
         }
         
-        document.querySelector('h1 span.count').innerText = parseInt(sortedList.length);
+        // document.querySelector('h1 span.count').innerText = parseInt(sortedList.length);
         document.querySelector('#found-beacons').innerHTML = baconHtml;
         bacon.appContainer.classList.remove('loading');
     }
@@ -134,8 +130,6 @@ ADDRESS:
     bacon.message = function(text) {
         document.querySelector('#message').innerHTML = text;
     }
-
-    bacon.message('ready that bacon...');
 
     document.addEventListener('deviceready', bacon.ready, false);
 

@@ -17,10 +17,9 @@
 
         <h1>Clue 1 of 2</h1>
         <h3>We don’t do these often but always at 2:30. Get ready for pain and I hope you are sturdy.</h3>
-        <h1>Beacon Test <span class="count"></span></h1>
-        <p id="message">Preparing...</p>
+        <p id="message">Searching for bacon...</p>
 
-        <div id="found-beacons">Waiting for bacon...</div>
+        <div id="found-beacons"></div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
@@ -41,13 +40,11 @@
         bacon.appContainer = document.querySelector('.app');
 
     bacon.ready = function() {
-        bacon.message('the bacon is ready!');
         setTimeout(bacon.scan, 1000);
         bacon.timer = setInterval(bacon.updateList, 1000);
     }
 
     bacon.scan = function() {
-        bacon.message('cooking bacons');
         evothings.eddystone.startScan(function(beacon) {
             // Update beacon data.
             beacon.timeStamp = Date.now();
@@ -90,7 +87,6 @@
     }
 
     bacon.display = function() {
-        bacon.message('providing bacons');
         bacon.appContainer.classList.add('loading');
         var baconHtml = '';
         var sortedList = bacon.getSortedList(bacon.beacons);
@@ -115,12 +111,12 @@
                 // baconHtml += '</div>';
                 bacon.message('You found it! The answer was the "The planks picture"');
                 bacon.timer = null;
-                baconHtml += '<a class="btn" id="play" href="clue2.html">NEXT</a>';
+                baconHtml += '<br/><a class="btn" id="play" href="clue2.html">NEXT</a>';
             }
             
         }
         
-        document.querySelector('h1 span.count').innerText = parseInt(sortedList.length);
+        // document.querySelector('h1 span.count').innerText = parseInt(sortedList.length);
         document.querySelector('#found-beacons').innerHTML = baconHtml;
         bacon.appContainer.classList.remove('loading');
     }
@@ -134,8 +130,6 @@
     bacon.message = function(text) {
         document.querySelector('#message').innerHTML = text;
     }
-
-    bacon.message('ready that bacon...');
 
     document.addEventListener('deviceready', bacon.ready, false);
 
